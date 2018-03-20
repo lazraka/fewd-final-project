@@ -95,5 +95,24 @@ section{
 	float: left;
 	padding-top: 30px;
 	padding-left:20px;
+	width:1000px;
 }
+h3{
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 30px;
+	display: block;
+	margin-bottom: 20px;
+}
+section div{
+	height:200px;
+	width:30%;
+	float:left;
+	margin-bottom: 2%;
+	margin-right: 30px;
+	background-color:#E8C05D;
+	padding:20px;
+}
+h4{
+	font-size: 20px
 
+}
