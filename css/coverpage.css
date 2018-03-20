@@ -16,30 +16,45 @@
 }
 /* Center the container */
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  height:150px;
+  width: 100%;
+  /*margin: 0 10px;*/
+  height:100px;
 }
 
 header {
   background: #EBFAFF;
   padding: 25px 0;
   overflow: hidden;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
-header .name {
+header .lab {
   color: #000;
   text-align: center;
   font-size: 48px;
   font-weight: 800;
+  display: inline-block;
+}
+header .name {
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  display: inline-block;
+  float: left;
+  margin-left: 30px;
 }
 header .today-date{
 	color: #000;
-  text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   font-weight: 800;
+  float: right;
+  margin-right: 30px;
 }
 header nav {
   margin-top: 15px;
+  font-family: "Questrial", sans-serif;
+  height:80px;
+  vertical-align: bottom;
 }
 header nav ul li {
   display: inline-block;
