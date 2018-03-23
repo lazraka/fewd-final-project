@@ -14,53 +14,55 @@
   line-height: 0;
   height: 0;
 }
-/* Center the container */
-.container {
-  width: 100%;
-  /*margin: 0 10px;*/
-  height:100px;
-}
-
 header {
   background: #EBFAFF;
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 3px;
   overflow: hidden;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
-header .lab {
-  color: #556064;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 800;
+header .head-left{
+  float: left;
   display: inline-block;
+  width:15%;
 }
 header .name {
   color: #032C39;
   font-size: 30px;
   font-weight: 800;
-  display: inline-block;
-  float: left;
-  margin-left: 30px;
 }
-header .today-date{
-	color: #032C39;
-    font-size: 20px;
+header .head-middle{
+  float: left;
+  display: inline-block;
+  text-align: center;
+  width:70%;
+}
+header .lab {
+  color: #556064;
+  font-size: 48px;
   font-weight: 800;
-  float: right;
+}
+
+header .head-right{
+  float:left;
+  width:15%;
+}
+header .today-date, header .week-date{
+	color: #032C39;
+  font-size: 20px;
+  font-weight: 800;
   margin-right: 30px;
 }
 header nav {
-  margin-top: 15px;
+  margin-top: 30px;
   font-family: "Questrial", sans-serif;
-  height:80px;
 
 }
 header nav ul li {
   display: inline-block;
   margin: 0 0 0 40px;
   font-size: 24px;
-    vertical-align: bottom;
 }
 header nav ul li a {
   color: #0085B2;
@@ -69,14 +71,13 @@ a{
 	text-decoration: none;
 }
 #sidebar {
-  width: 240px;
+  width: 15%;
   height:1000px;
   display: inline-block;
   vertical-align: top;
   font-family: "Open Sans", sans-serif;
   padding-top: 30px;
   padding-left:20px;
- /* margin-top: 30px;*/
   border-right:#0085B2 2px solid;
   float: left;
 }
@@ -91,11 +92,11 @@ a{
 #sidebar ul li a{
 color: #043049;
 }
-section{
+.notebook-content{
 	float: left;
 	padding-top: 30px;
-	padding-left:20px;
-	width:1000px;
+	padding-left:3%;
+	width:85%;
 }
 h3{
 	font-family: "Nanum Gothic", sans-serif;
@@ -103,13 +104,13 @@ h3{
 	display: block;
 	margin-bottom: 20px;
 }
-section div{
+.notebook-content div{
 	height:200px;
 	width:30%;
 	float:left;
 	margin-bottom: 2%;
-	margin-right: 30px;
-	background-color:#E8C05D;
+	margin-right: 3%;
+	background-color:#F5E9A7;
 	padding:20px;
 }
 h4{
