@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Coverpage</title>
+	<title>Notebook page</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link type="text/css" rel="stylesheet" href="css/notebook_page.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Open+Sans:400,600,700|Questrial" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
-	<header >
-		<span>Logo</span>
-		<a href="">Search Bar</a>
-		<span>Date</span>
+	<header>
+		<div class="inner">
+		<section class="head-left">
+			<h2 class ="name">Amina Lazrak</h2>
+		</section>
+		<section class="head-middle">
+			<h1 class="lab">Laboratory Notebook</h1>
+			<nav>
+				<ul>
+					<li><a href="coverpage.html">Projects</a></li>
+					<li><a href="">Dates</a></li>
+					<li>
+						<div class="search-bar"> 
+							<a class="icon" href="#"><i class="fa fa-search"></i></a>
+							<input class="search" id="search" type="text" placeholder="Search..."/>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section class="head-right">
+			<span class="week-date">Tuesday</span>
+			<span class="today-date">March 3, 2018</span>
+		</section>	
+		</div>
 	</header>
 
-	<aside >
+	<aside id="sidebar">
+		<div class="side-inner">
 		<ul>
-			<li>New</li>
-			<li>Merge</li>
-			<li>Share</li>
-			<li>Manage</li>
+			<li><a class="new" href="#">New Project</a></li>
+			<li><a href="#">Share Project</a></li>
+			<li><a href="#">Manage Project</a></li>
 		</ul>
-		<ul>
-			<li>Name</li>
-			<li>Date</li>
-			<li>Updated</li>
-			<li>Filetype</li>
-		</ul>
+		</div>
 	</aside>
 
-	<section >
-		<h1>Experiments</h1>
-			<div>
-				<h2>Type name</h2>
-				<ul>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-				</ul>
-			</div>
-			
-			<div>
-				<h2>Type name</h2>
-				<ul>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-				</ul>
-			</div>
-			
-			<div>
-				<h2>Type name</h2>
-				<ul>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-					<li>Experiment name</li>
-				</ul>
-			</div>
+	<section class="content">
+		<ul>
+			<li class="raw-data harvest one"><time>3-22-2018</time> 8PM Harvest 1 Raw Data</li>
+			<li class="raw-data harvest two"><time>10-04-2017</time> 8PM Harvest 2 Raw Data</li>
+			<li class="raw-data harvest three"><time>9-18-2017</time> 8PM Harvest 3 Raw Data</li>
+			<li class="raw-data harvest one"><time>5-02-2017</time> Baseline Harvest 1 Raw Data</li>
+
+			<li class="protocol harvest one"><time>3-22-2018</time> 8PM Harvest 1 Protocol</li>
+			<li class="protocol harvest two"><time>10-04-2017</time> 8PM Harvest 2 Protocol</li>
+			<li class="protocol harvest three"><time>9-18-2017</time> 8PM Harvest 3 Protocol</li>
+			<li class="protocol harvest one"><time>5-02-2017</time> Baseline Harvest 1 Protocol</li>
+		</ul>
 	</section>
 	
-	<footer >
+	<!-- <footer >
 		<p> This the personal property of Amina Lazrak
-	</footer>
-
+	</footer> -->
+<script src="js/notebook_page.js"></script>
 </body>
 
 </html>

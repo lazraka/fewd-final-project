@@ -41,8 +41,6 @@ header .name {
   font-weight: 800;
 }
 header .search-bar{
-  width: 200px;
-  /*vertical-align: middle;*/
   white-space: nowrap;
   position: relative;
 }
@@ -151,11 +149,12 @@ color: white;
 	padding-left:3%;
 	width:85%;
 }
-h3{
+.notebook-title{
 	font-family: "Nanum Gothic", sans-serif;
 	font-size: 30px;
 	display: block;
 	margin-bottom: 20px;
+  position:relative;
 }
 .notebook-content .outer{
 	height:400px;

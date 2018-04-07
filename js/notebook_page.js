@@ -1,12 +1,10 @@
-
 $(document).ready(function(){
 
-
-    $("li").hover(function(){
-        $(this).css("font-size", "28px");
-        }, function(){
-        $(this).css("font-size", "24px");
-    });
+    // $("li").hover(function(){
+    //     $(this).css("font-size", "28px");
+    //     }, function(){
+    //     $(this).css("font-size", "24px");
+    // });
 
     $("h3").hover(function(){
         $(this).css("text-decoration", "underline");
@@ -29,5 +27,3 @@ $(document).ready(function(){
 
     //
 });
-
-//sharing tab would be sharing the link of the project page with another user
