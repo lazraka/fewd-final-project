@@ -22,8 +22,10 @@
 			<nav>
 				<ul>
 					<li><a href="coverpage.html">Projects</a></li>
-					<li><a href="">Dates</a></li>
-					<li>
+					<li class="filter-title"><p>Title</p></li>
+					<li class="filter-date"><p>Date</p></li>
+					<li class="filter-model"><p>Model</p></li>
+					<li class="filter-type"><p>Type</p></li>
 						<div class="search-bar"> 
 							<a class="icon" href="#"><i class="fa fa-search"></i></a>
 							<input class="search" id="search" type="text" placeholder="Search..."/>
@@ -42,24 +44,60 @@
 	<aside id="sidebar">
 		<div class="side-inner">
 		<ul>
-			<li><a class="new" href="#">New Project</a></li>
-			<li><a href="#">Share Project</a></li>
-			<li><a href="#">Manage Project</a></li>
+			<li><a class="new" href="#">New Experiment</a></li>
+			<li><a href="#">Share Experiment</a></li>
+			<li><a href="#">Delete Experiment</a></li>
 		</ul>
 		</div>
 	</aside>
 
 	<section class="content">
 		<ul>
-			<li class="raw-data harvest one"><time>3-22-2018</time> 8PM Harvest 1 Raw Data</li>
-			<li class="raw-data harvest two"><time>10-04-2017</time> 8PM Harvest 2 Raw Data</li>
-			<li class="raw-data harvest three"><time>9-18-2017</time> 8PM Harvest 3 Raw Data</li>
-			<li class="raw-data harvest one"><time>5-02-2017</time> Baseline Harvest 1 Raw Data</li>
+			<li class="raw-data harvest one">
+				<div class="exp-date">
+					<time>3-22-2018</time> 
+				</div>
+				<div class="exp-name">
+					<h2>8PM Harvest 1 Raw Data</h2>
+					</div>
+				</li>
+			<li class="raw-data harvest two">
+				<div class="exp-date">
+					<time>10-04-2017</time> 
+				</div>
+				<div class="exp-name">
+					<h2>8PM Harvest 2 Raw Data</h2>
+				</div>
+			</li>
+			<li class="raw-data harvest three">
+				<div class="exp-date">
+					<time>9-18-2017</time> 
+				</div>
+				<div class="exp-name">
+					<h2>8PM Harvest 3 Raw Data</h2>
+				</div>
+			</li>
+			<li class="raw-data harvest one">
+				<div class="exp-date">
+					<time>5-02-2017</time>
+				</div>
+				<div class="exp-name">
+					<h2>Baseline Harvest 1 Raw Data</h2>
+				</div>
+			</li>
+			<li class="raw-data transplant one">
+				<div class="exp-date">
+					<time>5-02-2017</time>
+				</div>
+				<div class="exp-name">
+					<h2>Baseline BMT 1 Raw Data</h2>
+				</div>
+			</li>
 
-			<li class="protocol harvest one"><time>3-22-2018</time> 8PM Harvest 1 Protocol</li>
+			<!-- <li class="protocol harvest one"><time>3-22-2018</time> 8PM Harvest 1 Protocol</li>
 			<li class="protocol harvest two"><time>10-04-2017</time> 8PM Harvest 2 Protocol</li>
 			<li class="protocol harvest three"><time>9-18-2017</time> 8PM Harvest 3 Protocol</li>
-			<li class="protocol harvest one"><time>5-02-2017</time> Baseline Harvest 1 Protocol</li>
+			<li class="protocol harvest one"><time>5-02-2017</time> Baseline Harvest 1 Protocol</li> -->
 		</ul>
 	</section>
 	

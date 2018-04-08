@@ -137,7 +137,7 @@ a{
   height:1000px;
 }
 #sidebar ul li {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 #sidebar ul li a{
@@ -156,11 +156,22 @@ color: white;
   height:40px;
   border: solid 2px black;
   border-radius: 5px;
-  padding-top: 10px;
   padding-left:10px;
   margin-top: 10px;
-  /*float:left;*/
+  padding-left:15px;
 }
-li time{
-  margin-right: 15px;
+.exp-name{
+  float:left;
+  padding-left:15px;
+  padding-top: 10px;
+}
+.exp-date{
+  float:left;
+  border-right:solid black 2px;
+  height:100%;
+  padding-top: 10px;
+  width:10%;
+}
+time{
+  /*margin-right: 15px;*/
 }

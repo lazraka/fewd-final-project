@@ -25,5 +25,10 @@ $(document).ready(function(){
     				$("<span class='update'>Updated:</span>"))));
     });
 
-    //
+    $(".filter-type").on("click", function(){
+        $("li").filter(".raw-data").css("color","red");
+    });
+    $(".filter-model").on("click", function(){
+        $("li").filter(".harvest").css("color","blue");
+    });
 });
