@@ -16,30 +16,94 @@
 }
 header{
   background-color: white;
-  border-bottom:#EBFAFF 8px solid;
-  height:200px;
+  border-bottom:#2ebfac 5px solid;
+  height:6em;
+  position:fixed;
+  width:100%;
+
 }
 header .inner{
-  background-color: #EBFAFF;
-  padding-top: 10px;
-  padding-bottom: 3px;
+  background-color: #2ebfac;
   overflow: hidden;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  height:97%;
+  height:98%;
   width:100%;
 }
 header .head-left{
   float: left;
-  display: inline-block;
+  height:100%;
   width:15%;
-  padding-top: 10px;
+  padding-top: 1.5em;
+  padding-left: 2em;
+
 }
-header .name {
-  color: #032C39;
-  font-size: 30px;
+.hamburger {
+    display: block;
+  }
+
+.hamburger span {
+  display: block;
+  width: 4em;
+  height:5px;
+  background-color: white;
+  margin:5px 0;
+}
+
+header .head-middle{
+  float: left;
+  text-align: center;
+  width:70%;
+  height:100%;
+}
+.top-divider{
+  padding-top: 5px;
+  height:70%;
+  width:100%;
+  display:block;
+}
+header .lab {
+  font-size: 48px;
   font-weight: 800;
+  color: white;
+    -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color: #043049;
+   letter-spacing: 0.04em;
 }
+.bottom-divider{
+  height:30%;
+  width:100%;
+  display:block;
+}
+.bottom-divider h2{
+  color:black;
+  font-size: 1.2em;
+}
+.hor-half{
+  width:50%;
+  height:100%;
+  float:left;
+}
+.name{
+  text-align:right;
+  padding-right: 1em;
+  border-right:white solid 1px;
+}
+.today-date{
+  text-align: left;
+  padding-left: 1em;
+}
+
+.icon{
+  /*position: absolute;*/
+  top: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+  z-index: 1;
+  color: #043049;
+  display: inline-block;
+}
+
 header .search-bar{
   white-space: nowrap;
   position: relative;
@@ -60,63 +124,63 @@ header .search-bar{
   top:0;
   left:100%;
 }
-.icon{
-  /*position: absolute;*/
-  top: 50%;
-  margin-left: 5px;
-  margin-top: 5px;
-  z-index: 1;
-  color: #043049;
-  display: inline-block;
-}
-
-header .head-middle{
-  float: left;
-  display: inline-block;
-  text-align: center;
-  width:70%;
-}
-header .lab {
-  /*color: #556064;*/
-  font-size: 48px;
-  font-weight: 800;
-  color: white;
-    -webkit-text-stroke-width: 1.5px;
-   -webkit-text-stroke-color: #043049;
-  /*text-shadow: -1.5px 0 #043049, 0 1.5px #043049, 1.5px 0 #043049, 0 -1.5px #043049;*/
-}
 
 header .head-right{
   float:left;
   width:15%;
-  padding-top: 10px;
-}
-header .today-date, header .week-date{
-	color: #032C39;
-  font-size: 20px;
+  color: #032C39;
   font-weight: 800;
-  margin-right: 30px;
 }
-header .today-date{
-  display: block;
+.button{
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-decoration:none;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin-top: 1.5em;
+  padding:1.20em 2.2em;
+  font-size: 0.8em;
 }
+
 header nav {
   margin-top: 10px;
   font-family: "Questrial", sans-serif;
+  height:150px;
 }
 header nav ul li {
   display: inline-block;
   margin: 0 0 0 40px;
   font-size: 24px;
-  float:left;
+ /* float:left;*/
 }
 header nav ul li a {
   color: #043049;
 }
 a{
+  color:white;
 	text-decoration: none;
 }
-
+.filter-search{
+  display:block;
+  width:100%;
+  height:40px;
+}
+.sort-by{
+  width:25%;
+  margin:0 0 0 0;
+}
+.bins{
+display:block;
+  width:100%;
+  height:40px;
+}
+.options div{
+  float:left;
+  width:25%;
+}
+.sub-options div{
+  float:left;
+}
 #sidebar {
   width: 15%;
   height:1000px;
