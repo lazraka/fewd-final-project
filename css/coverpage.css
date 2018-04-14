@@ -16,29 +16,126 @@
 }
 header{
   background-color: white;
-  border-bottom:#EBFAFF 8px solid;
-  height:110px;
+  border-bottom:grey 5px solid;
+  height:6em;
+  position:fixed;
+  width:100%;
+
 }
 header .inner{
-  background-color: #EBFAFF;
-  padding-top: 10px;
-  padding-bottom: 3px;
+  background-color: grey;
   overflow: hidden;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  height:97%;
+  height:98%;
   width:100%;
 }
 header .head-left{
   float: left;
-  display: inline-block;
+  height:100%;
   width:15%;
-  padding-top: 10px;
+  padding-top: 1.5em;
+  padding-left: 2em;
+
 }
-header .name {
-  color: #032C39;
-  font-size: 30px;
+.hamburger {
+    display: block;
+  }
+
+.hamburger span {
+  display: block;
+  width: 4em;
+  height:5px;
+  background-color: white;
+  margin:5px 0;
+}
+
+header .head-middle{
+  float: left;
+  text-align: center;
+  width:70%;
+  height:100%;
+}
+.top-divider{
+  padding-top: 5px;
+  height:70%;
+  width:100%;
+  display:block;
+}
+header .lab {
+  font-size: 48px;
   font-weight: 800;
+  color: white;
+    -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color: black;
+   letter-spacing: 0.04em;
+}
+.bottom-divider{
+  height:30%;
+  width:100%;
+  display:block;
+}
+.bottom-divider h2{
+  color:black;
+  font-size: 1.2em;
+}
+.hor-half{
+  width:50%;
+  height:100%;
+  float:left;
+}
+.fixed-text-right{
+  text-align:right;
+  padding-right: 1em;
+  border-right:white solid 1px;
+}
+.fixed-text-left{
+  text-align: left;
+  padding-left: 1em;
+}
+.today-date{
+  float:left;
+}
+.icon{
+  top: 50%;
+  z-index: 1;
+  color: white;
+  display: inline-block;
+  border:solid 1px black;
+  padding:4px;
+  font-size: 2em;
+}
+
+.content{
+  padding-top: 6em;
+  /*padding-left:20px;*/
+  width:100%;
+  height:1000px;
+}
+.filter-main{
+  width:60%;
+  height:20%;
+  padding-left:2em;
+  padding-top:1em;
+  padding-right:2em;
+  margin:0 auto;
+}
+.filter-title{
+  width:100%;
+  height:20%;
+  border-bottom:1px solid grey;
+  font-size:1.7em;
+}
+.filter-content{
+  width:100%;
+  height:80%;
+}
+
+.filter-bins{
+  height:100%;
+  width:25%;
+  border-right:1px solid grey;
+  padding-top:1em;
 }
 header .search-bar{
   white-space: nowrap;
@@ -60,60 +157,22 @@ header .search-bar{
   top:0;
   left:100%;
 }
-.icon{
-  /*position: absolute;*/
-  top: 50%;
-  margin-left: 5px;
-  margin-top: 5px;
-  z-index: 1;
-  color: #043049;
-  display: inline-block;
-}
-
-header .head-middle{
-  float: left;
-  display: inline-block;
-  text-align: center;
-  width:70%;
-}
-header .lab {
-  /*color: #556064;*/
-  font-size: 48px;
-  font-weight: 800;
-  color: white;
-    -webkit-text-stroke-width: 1.5px;
-   -webkit-text-stroke-color: #043049;
-  /*text-shadow: -1.5px 0 #043049, 0 1.5px #043049, 1.5px 0 #043049, 0 -1.5px #043049;*/
-}
 
 header .head-right{
   float:left;
   width:15%;
-  padding-top: 10px;
-}
-header .today-date, header .week-date{
-	color: #032C39;
-  font-size: 20px;
   font-weight: 800;
-  margin-right: 30px;
+  padding-top: 1.5em;
 }
-header .today-date{
-  display: block;
-}
-header nav {
-  margin-top: 10px;
-  font-family: "Questrial", sans-serif;
-}
-header nav ul li {
+.button{
   display: inline-block;
-  margin: 0 0 0 40px;
-  font-size: 24px;
-}
-header nav ul li a {
-  color: #043049;
-}
-a{
-	text-decoration: none;
+  letter-spacing: 0.1em;
+  text-decoration:none;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin-top: 1.5em;
+  padding:1.20em 2.2em;
+  font-size: 0.8em;
 }
 #sidebar {
   width: 15%;
@@ -143,11 +202,16 @@ a{
 color: white;
 /*background-color: #043049;*/
 }
-.notebook-content{
+.project-content-main{
 	float: left;
-	padding-top: 30px;
-	padding-left:3%;
-	width:85%;
+	width:90%;
+  height:80%;
+  margin-left:5%;
+}
+.project-rows{
+  width:100%;
+  height:50%;
+  display:block;
 }
 .notebook-title{
 	font-family: "Nanum Gothic", sans-serif;
@@ -156,17 +220,17 @@ color: white;
 	margin-bottom: 20px;
   position:relative;
 }
-.notebook-content .outer{
-	height:400px;
-	width:30%;
+.project-outer{
+	height:100%;
+	width:33.3%;
 	float:left;
-	margin-bottom: 2%;
-	margin-right: 3%;
+/*	margin-bottom: 2%;
+	margin-right: 3%;*/
 	background-color:#F5E9A7;
 	padding:10px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
-.notebook-content .inner{
+.project-inner{
   padding-top: 20px;
   height:100%;
   width:100%;
