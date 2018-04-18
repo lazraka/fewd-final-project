@@ -92,14 +92,7 @@ $(".date-sort").on("click", function(){
     $(".add").empty();
 	addProjectsByDate();
 })
-///////////
-
-//Grab all the titles of the projects and store in an array
-//  var projectTitle=document.getElementsByTagName("h3");
-//    for(var i=0; i<projectTitle.length; i++){
-//    	document.getElementsByTagName("h3").innerText=projectTitle[i];
-// 	};
-// console.log(projectTitle)	
+///////////	
 
 // $(".title-sort").on("click", function(){
 // 	projectTitle.sort;
