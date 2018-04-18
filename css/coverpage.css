@@ -154,6 +154,7 @@ aside {
   background-color: black;
   top:0;
   left:-100%;
+  z-index: 5;
 }
 
 .sidebar ul li {
