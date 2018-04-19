@@ -14,61 +14,57 @@
   line-height: 0;
   height: 0;
 }
+
+/*--------------------------------Header Start-------------------------------*/
 header{
-  background-color: white;
-  border-bottom:#2ebfac 5px solid;
-  height:6em;
+  background-color: black;
+  /*border-bottom:grey 5px solid;*/
+  height:3.5em;
   position:fixed;
   width:100%;
-
+  z-index: 1;
 }
 header .inner{
-  background-color: #2ebfac;
+  background-color: black;
   overflow: hidden;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  height:98%;
+  height:100%;
   width:100%;
 }
-header .head-left{
+.head-left{
   float: left;
   height:100%;
   width:15%;
-  padding-top: 1.5em;
-  padding-left: 2em;
-
+  padding-top: 1em;
+  padding-left: 1em;
+  color:white;
 }
 .hamburger {
     display: block;
+    margin-top: 0.3em
   }
 
 .hamburger span {
   display: block;
-  width: 4em;
+  width: 2em;
   height:5px;
-  background-color: white;
+  background-color: black;
   margin:5px 0;
 }
 
-header .head-middle{
+.head-middle{
   float: left;
   text-align: center;
   width:70%;
   height:100%;
+  padding-top: 0.2em;
 }
 .top-divider{
   padding-top: 5px;
   height:70%;
   width:100%;
   display:block;
-}
-header .lab {
-  font-size: 48px;
-  font-weight: 800;
-  color: white;
-    -webkit-text-stroke-width: 1.5px;
-   -webkit-text-stroke-color: #043049;
-   letter-spacing: 0.04em;
 }
 .bottom-divider{
   height:30%;
@@ -87,12 +83,96 @@ header .lab {
 .fixed-text-right{
   text-align:right;
   padding-right: 1em;
-  border-right:white solid 1px;
 }
 .fixed-text-left{
   text-align: left;
   padding-left: 1em;
 }
+.today-date{
+}
+.icon{
+  top: 50%;
+  z-index: 2;
+  color: white;
+  display: inline-block;
+  padding:4px;
+  font-size: 2em;
+}
+.search{
+  width:30em;
+  height:2em;
+  border:none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 0.5em;
+  padding-left:0.5em;
+}
+
+.head-right{
+  float:left;
+  width:15%;
+  height: 100%;
+  padding-top: 1em;
+  text-align: right;
+  padding-right:1em;
+  color:white;
+}
+/*--------------------------------Header End-------------------------------*/
+/*--------------------------------Aside Start-------------------------------*/
+aside {
+  width: 15%;
+  height:1000px;
+  position: fixed;
+  vertical-align: top;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 4em;
+  padding-left: 15px;
+  background-color: black;
+  top:0;
+  left:-100%;
+  z-index: 5;
+}
+
+.sidebar ul li {
+  font-size: 1em;
+  margin-bottom: 40px;
+  height:0.7em;
+}
+
+.sidebar ul li:hover {
+  font-size: 1.2em;
+}
+
+.sidebar ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.close-nav{
+  position: absolute;
+  z-index: 90;
+  cursor: pointer;
+  display: block;
+  width:100%;
+  margin-left:80%;
+}
+
+.close-nav span {
+  display: block;
+  width: 20px;
+  height:3px;
+  background-color: white;
+  transform: rotate(45deg) translate(2px);
+  -webkit-transform: rotate(45deg) translate(2px);
+  -moz-transform: rotate(45deg) translate(2px);
+}
+
+.close-nav span.right {
+  transform: rotate(-45deg) translate(2px);
+  -webkit-transform: rotate(-45deg) translate(2px);
+  -moz-transform: rotate(-45deg) translate(2px);
+}
+/*--------------------------------Aside End-------------------------------*/
 
 .content{
   padding-top: 6em;
@@ -100,74 +180,7 @@ header .lab {
   width:100%;
   height:1000px;
 }
-.today-date{
-  float:left;
-}
-.icon{
-  top: 50%;
-  z-index: 1;
-  color: white;
-  display: inline-block;
-  border:solid 1px black;
-  padding:4px;
-}
 
-header .search-bar{
-  white-space: nowrap;
-  position: relative;
-}
-.search-bar input#search{
-  width: 200px;
-  height: 30px;
-  background: white;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #63717f;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  display:none;
-  position: absolute;
-  top:0;
-  left:100%;
-}
-
-header .head-right{
-  float:left;
-  width:15%;
-  color: #032C39;
-  font-weight: 800;
-}
-.button{
-  display: inline-block;
-  letter-spacing: 0.1em;
-  text-decoration:none;
-  border-radius: 6px;
-  border: 1px solid black;
-  margin-top: 1.5em;
-  padding:1.20em 2.2em;
-  font-size: 0.8em;
-}
-
-header nav {
-  margin-top: 10px;
-  font-family: "Questrial", sans-serif;
-  height:150px;
-}
-header nav ul li {
-  display: inline-block;
-  margin: 0 0 0 40px;
-  font-size: 24px;
- /* float:left;*/
-}
-header nav ul li a {
-  color: #043049;
-}
-a{
-  color:white;
-	text-decoration: none;
-}
 .name-date{
   display:block;
   width:100%;
@@ -189,37 +202,9 @@ display:block;
 .sub-options div{
   float:left;
 }
-#sidebar {
-  width: 15%;
-  height:1000px;
-  display: inline-block;
-  vertical-align: top;
-  font-family: "Open Sans", sans-serif;
-  border-right:#043049 2px solid;
-  float: left;
-}
-#sidebar ul {
-  margin-bottom: 40px;
-}
-#sidebar .side-inner {
-  margin-bottom: 40px;
-  width:98%;
-  padding-top: 25px;
-  padding-left:15px;
-  background-color: #043049;
-  height:1000px;
-}
-#sidebar ul li {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-#sidebar ul li a{
-color: white;
-/*background-color: #043049;*/
-}
 
 
-/*.content li{
+.content li{
   width:80%;
   height:40px;
   border: solid 2px black;
@@ -227,7 +212,7 @@ color: white;
   padding-left:10px;
   margin-top: 10px;
   padding-left:15px;
-}*/
+}
 .exp-name{
   float:left;
   padding-left:15px;

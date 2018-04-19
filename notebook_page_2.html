@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Notebook page</title>
+	<title>Experiments</title>
+	<meta name="description" content="Lab Notebook Experiments">
+	
 	<link rel="stylesheet" href="css/reset.css">
 	<link type="text/css" rel="stylesheet" href="css/notebook_page.css" />
 
@@ -15,43 +17,99 @@
 	<header>
 		<div class="inner clearfix">
 			<section class="head-left">
+				<h2 class ="fixed-text-left">Amina Lazrak</h2>
+			</section>
+			<section class="head-middle">
+				<input class="search" type="text" placeholder="Search Projects..."/>
+				<a class="icon" href="#"><i class="fa fa-search"></i></a>
+			</section>
+			<section class="head-right">
+				<h2 class="fixed-text-right today-date">March 3, 2018</h2>
+			</section>	
+		</div>
+	</header>
+	<aside class="sidebar">
+		<ul>
+			<li>
+				<div class="close-nav">
+          			<span class="left"></span><span class="right"></span>
+        		</div>
+        	</li>
+			<li><a class="new" href="#">New Experiment</a></li>
+			<li><a href="#">Share Experiment</a></li>
+			<li><a href="#">Delete Experiment</a></li>
+		</ul>
+	</aside>
+	<section class="content">
+		<section class="title-main">
+			<div class="title-area">
+				<div class="title-left">
 					<div class="hamburger">
 						<span></span><span></span><span></span>
 					</div>
-					<!-- <nav>
-						<ul>
-							<li>New</li>
-							<li>Share</li>
-							<li>Delete</li>
-						</ul>
-						<div class="close-nav">
-							<span class="left"></span><span class="right"></span>
-						</div>
-					</nav> -->
-				</section>
-				<section class="head-middle">
-					<div class="top-divider">
-						<h1 class="lab">Laboratory Notebook</h1>
+				</div>
+				<div class="title-right">
+					<div class="sort-by">
+						<span class="title-sort button">Filter</span>
 					</div>
-					<div class="bottom-divider">
-						<div class="hor-half">
-							<h2 class ="fixed-text-right">Amina Lazrak</h2>
-						</div>
-						<div class="hor-half">
-							<h2 class="fixed-text-left today-date">March 3, 2018</h2>
-							<a class="icon" href="#"><i class="fa fa-search"></i></a>
-						</div>
+				</div>
+			</div>
+			<div class="filter-content">
+				<div class="filter-bins">
+				</div>
+			</div>
+		</section>
+				<ul>
+			<li class="raw-data harvest one">
+				<div class="exp-date">
+					<time>3-22-2018</time> 
+				</div>
+				<div class="exp-name">
+					<h2>8PM Harvest 1 Raw Data</h2>
 					</div>
+				</li>
+			<li class="raw-data harvest two">
+				<div class="exp-date">
+					<time>10-04-2017</time> 
+				</div>
+				<div class="exp-name">
+					<h2>8PM Harvest 2 Raw Data</h2>
+				</div>
+			</li>
+			<li class="raw-data harvest three">
+				<div class="exp-date">
+					<time>9-18-2017</time> 
+				</div>
+				<div class="exp-name">
+					<h2>8PM Harvest 3 Raw Data</h2>
+				</div>
+			</li>
+			<li class="raw-data harvest one">
+				<div class="exp-date">
+					<time>5-02-2017</time>
+				</div>
+				<div class="exp-name">
+					<h2>Baseline Harvest 1 Raw Data</h2>
+				</div>
+			</li>
+			<li class="raw-data transplant one">
+				<div class="exp-date">
+					<time>5-02-2017</time>
+				</div>
+				<div class="exp-name">
+					<h2>Baseline BMT 1 Raw Data</h2>
+				</div>
+			</li>
+
+			<li class="protocol harvest one"><time>3-22-2018</time> 8PM Harvest 1 Protocol</li>
+			<li class="protocol harvest two"><time>10-04-2017</time> 8PM Harvest 2 Protocol</li>
+			<li class="protocol harvest three"><time>9-18-2017</time> 8PM Harvest 3 Protocol</li>
+			<li class="protocol harvest one"><time>5-02-2017</time> Baseline Harvest 1 Protocol</li>
+		</ul>
+	</section>
+
 				<!-- <nav>
 					<div class="filter-search">
-					<ul>
-						<li>
-							<div class="search-bar"> 
-								<a class="icon" href="#"><i class="fa fa-search"></i></a>
-								<input class="search" id="search" type="text" placeholder="Search..."/>
-							</div>
-						</li>
-					</ul>
 				</div>
 					<section>
 						<div class="bins">
@@ -109,84 +167,8 @@
 						</div>
 					</section>
 				</nav> -->
-			</section>
-		<section class="head-right">
-			<a href="coverpage.html" class="button">Projects</a>
-		</section>	
-		</div>
-	</header>
-
-<!-- 	<aside id="sidebar">
-		<div class="side-inner">
-		<ul>
-			<li><a class="new" href="#">New Experiment</a></li>
-			<li><a href="#">Share Experiment</a></li>
-			<li><a href="#">Delete Experiment</a></li>
-		</ul>
-		</div>
-	</aside> -->
-
-	<section class="content">
-		<div class="search-filter">
-			<div class="hor-half">
-				<h2 class ="fixed-text-right">Filter</h2>
-			</div>
-			<div class="hor-half">
-				<a class="icon" href="#"><i class="fa fa-search"></i></a>
-			</div>
-		</div>
-		<!-- <ul>
-			<li class="raw-data harvest one">
-				<div class="exp-date">
-					<time>3-22-2018</time> 
-				</div>
-				<div class="exp-name">
-					<h2>8PM Harvest 1 Raw Data</h2>
-					</div>
-				</li>
-			<li class="raw-data harvest two">
-				<div class="exp-date">
-					<time>10-04-2017</time> 
-				</div>
-				<div class="exp-name">
-					<h2>8PM Harvest 2 Raw Data</h2>
-				</div>
-			</li>
-			<li class="raw-data harvest three">
-				<div class="exp-date">
-					<time>9-18-2017</time> 
-				</div>
-				<div class="exp-name">
-					<h2>8PM Harvest 3 Raw Data</h2>
-				</div>
-			</li>
-			<li class="raw-data harvest one">
-				<div class="exp-date">
-					<time>5-02-2017</time>
-				</div>
-				<div class="exp-name">
-					<h2>Baseline Harvest 1 Raw Data</h2>
-				</div>
-			</li>
-			<li class="raw-data transplant one">
-				<div class="exp-date">
-					<time>5-02-2017</time>
-				</div>
-				<div class="exp-name">
-					<h2>Baseline BMT 1 Raw Data</h2>
-				</div>
-			</li>
-
-			<li class="protocol harvest one"><time>3-22-2018</time> 8PM Harvest 1 Protocol</li>
-			<li class="protocol harvest two"><time>10-04-2017</time> 8PM Harvest 2 Protocol</li>
-			<li class="protocol harvest three"><time>9-18-2017</time> 8PM Harvest 3 Protocol</li>
-			<li class="protocol harvest one"><time>5-02-2017</time> Baseline Harvest 1 Protocol</li>
-		</ul> -->
 	</section>
 	
-<!-- 	<footer >
-		<p> This the personal property of Amina Lazrak
-	</footer> -->
 <script src="js/notebook_page.js"></script>
 </body>
 
